@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBTSOLVER - Student Doubt Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DBTSOLVER</h1>
+        <p>Ask Doubts. Share Answers. Learn Together.</p>
+    </header>
+    
+    <main>
+        <section class="ask-box">
+            <h3>Have a doubt? Ask the community</h3>
+            <textarea id="doubtInput" placeholder="Type your homework question or concept doubt here..."></textarea>
+            <button onclick="postDoubt()">Post Doubt</button>
+        </section>
+
+        <section class="feed">
+            <h3>Recent Doubts</h3>
+            <div id="doubtsContainer">
+                <!-- Sample Doubt -->
+                <div class="card">
+                    <span class="badge">MATH</span>
+                    <p class="question">What is the derivative of sin(x) using first principles?</p>
+                    <div class="answers">
+                        <p class="answer"><strong>Answer:</strong> The derivative is cos(x). You use the limit definition lim(h->0) [sin(x+h) - sin(x)] / h.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
